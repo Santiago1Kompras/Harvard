@@ -1,0 +1,197 @@
+<!DOCTYPE html> <!-- para decir que estamos  -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Externo</title>
+    <script src="ensayos.js" defer></script>
+    <!-- Enlace al archivo JavaScript externo -->
+    <style>
+        input{
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+        }
+        h1 {
+            color: blue;
+            text-align: center;
+                
+        }
+        #sea {
+            border: 1px solid green;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid red;
+            padding: 5px;
+        }
+        .clasetitulos {
+            color: orange;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Hola, Este es el archivo para aprender en el curso de harvard!</h1>
+    <br>
+    Esta es una lista desordenada unordered
+    <ul>
+        <li>Opcion primerao</li>
+        <li>Opcion segunda</li>
+        <li>Opcion tercera</li>
+    </ul>
+    Esta es una lista ordenada
+    <ol>
+        <li>one item</li>
+        <li>Another item</li>
+        <li>Yet another item</li>
+    </ol>
+    
+    <h1 class="clasetitulos">El siguiente es el logo de lo que estoy estudiando HTML</h1>
+    <br><br>
+    <img src="htmlimage.png" alt="HTML image" width="150">
+    <br><br>
+    <!-- a continuación un tag para ir a otros links en internet -->
+    Lo siguiente es un link para ir a otra pagina, los hacemos con el tag a que signigica anchor tag
+    <br>
+    <a href="https://google.com">GOOGLE</a>
+    <br>
+    <a href="secoundpage.html">SEGUNDA PAGINA</a>
+    <br><br>
+    <!-- a continuación un tag para hacer una tabla -->
+     <table id="sea">
+        <thead>
+            <tr> <!--Table raw-->
+                <th>Ocean</th><!--Table Head-->
+                <th>Average Depth</th>
+                <th>Maximum Depth</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pacific Ocean</td><!--Table data-->
+                <td>4.280 mt</td>
+                <td>10.911 mt</td>
+            </tr>
+            <tr>
+                <td>Atlantic Ocean</td>
+                <td>3.646 mt</td>
+                <td>8.436 mt</td>
+            </tr>
+        </tbody>
+     </table>
+     <br><br>
+
+     <!--Forms to capture data-->
+     <form>
+        <input type="text" placeholder="Full Name" name="name">
+        <input type="submit">
+
+        <div>
+            <input name="name" type="text" placeholder="Name">
+            <input name="password" type="password" placeholder="Password">
+            <input type="submit">
+        </div>
+        <div>
+            FAvorite Color?
+            <input name="color" type="radio" value="red"> Red
+            <input name="color" type="radio" value="Green"> Green
+            <input name="color" type="radio" value="Yellow"> Yellow
+            <input name="color" type="radio" value="Other"> Other
+        </div>
+        <br><br>
+        <div> <!--Permite tener una lista e ir filtrando en la medida que uno empieza a escribir-->
+        Selecciona el pais
+            <input name="country" list="countries" placeholder="Country">
+            <datalist id="countries">
+                <option value="Afghanistan">
+                <option value="Colombia">
+                <option value="Francia">
+                <option value="Ecuador">
+                <option value="Argentina">  
+            </datalist>
+        </div>
+
+
+     </form>
+
+
+
+
+    <br>
+    <p style="text-align: center; border: 4px dotted blue; margin: 50px;">Fin de la matriz de decisión</p>
+    <br><br>
+    <h2>Los siguientes son ensayos y practicas para considerar despues</h2>
+    <button onclick="alert('Negociación critica')">Negociación crítica</button>
+    <br><br>
+    <input type="submit" value="Guardar variables de decisión">
+    <br><br>
+    <button onclick="window.location.href='https://portal1k.com'" target="_blank">ir al Portal 1K</button>
+    <br><br>
+    <a href="https://portal1k.com" target="_blank" class="mi-boton"> abrir portal 1K</a>
+    <br><br>
+    <ol>
+        <label for="variables random">Variables sin orden ERROR no se como mover al borde</label>
+    </ol>
+    <br>
+    <button class="mi-boton" type="submit">Guardar variables CSS</button>
+    <br>
+    <fieldset>
+        <legend>Comercial</legend>
+        <!-- Contenido relacionado con Comercial -->
+        Aqui hay un campo para meter cosas de los comercial
+
+
+    
+    </fieldset>
+    <br>
+
+    <table border="1">
+    <tr>
+        <th>Variables</th>
+        <th>Proveedor 1</th>
+        <th>Proveedor 2</th>
+        <th>Proveedor 3</th>
+    </tr>
+    <tr>
+        <td>Precio</td>
+        <td>15.000</td>
+        <td>11.000</td>
+        <td>12.500</td>
+    </tr>
+    <tr>
+        <td>Tiempo-entrega</td>
+        <td>5 Días</td>
+        <td>3 Días</td>
+        <td>4 Días</td>
+    </tr>
+    <tr>
+        <td>Forma-de-pago</td>
+        <td>30 Días</td>
+        <td>15 Días</td>
+        <td>30 Días</td>
+    </tr>
+    <tr>
+        <td>información-proveedor</td>
+        <td>Excelente</td>
+        <td>Regular</td>
+        <td>Excelente</td>
+    </tr>
+    <tr>
+        <td>calidad</td>
+        <td>Media</td>
+        <td>Alta</td>
+        <td>Baja</td>
+    </tr>
+</table>
+
+<h1>Calculadora</h1>
+<input type="text" id="op1" placeholder="Operador 1">
+<input type="text" id="operacion" placeholder="+ - * /">
+<input type="text" id="op2" placeholder="Operador 2">
+<br><br>
+<input type="submit" value="calcular" id="boton-calculadora" onclick="aplicarCalculadora()">
+
+</body>
+</html>
